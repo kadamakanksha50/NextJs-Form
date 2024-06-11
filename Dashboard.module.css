@@ -1,0 +1,218 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background: #223442;
+    box-shadow: 0px 0px 10px #71C7FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8%;
+}
+.header h2{
+    font-size: 30px;
+    color: #71C7FC;
+    font-family: Dancing Script;
+}
+.header button{
+    padding: 10px 20px;
+    border-radius: 3px;
+    background: #71C7FC;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header .items{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.header .action{
+    position: relative;
+}
+.header .action .cart{
+    position: absolute;
+    left: -160px;
+    margin-top: 10px;
+    width: 410px;
+    max-height: 380px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #71C7FC;
+    background: #223442;
+    box-shadow: 0px 0px 8px #71C7FC;
+    z-index: 5;
+    animation: anim linear 0.35s;
+    transition: all ease-in 0.4s;
+    padding: 5px 3px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.header .action .cart .actionLink{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.header .action .cart .actionLink a{
+    text-decoration: none;
+    color: #223442;
+    padding: 10px;
+    margin-top: 5px;
+    background: #71C7FC;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+@keyframes anim{
+    0%{
+        transform: translateY(80px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.header .action .cart .card1{
+    width: 95%;
+    height: 90px;
+    border-radius: 2px;
+    border: 1px solid #71C7FC;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .action .cart .card1 img{
+    width: 120px;
+    height: 70px;
+    border-radius: 10%;
+    border: 1px solid #71C7FC;
+    object-fit: cover;
+}
+.header .action .cart .card1 .title{
+    color: #71C7FC;
+    font-size: 18px;
+    font-weight: 599;
+    text-align: center;
+}
+.header .action .cart .card1 p{
+    font-size: 14px;
+    font-weight: 599;
+    color: white;
+}
+.contain{
+    width: 100%;
+    height: 1400px;
+    background: #223442;
+    margin-top: 1px;
+}
+.contain .section{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 8%;
+}
+.section .btn{
+    width: 180px;
+    height: 50px;
+    outline: none;
+    border: 2px solid #71C7FC;
+    background: #223442;
+    color: #71C7FC;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.course{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    padding: 0px 8%;
+}
+.course .card{
+    width: 28%;
+    height: 380px;
+    border: 1px solid #71C7FC;
+    background: #71C7FC;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: all ease 0.38s;
+    margin-left: 20px;
+}
+.course .card:hover{
+    box-shadow: 0px 0px 8px #71C7FC;
+    transform: scale(1.029);
+}
+.course .card img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.course .card h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.course h1{
+    color: #71C7FC;
+    text-align: center;
+}
+.course .card .desc{
+    width: 100%;
+    padding: 6px;
+    color: #223442;
+    text-align: justify;
+    height: 70px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.course .card .footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+}
+.course .card .footer p:nth-child(1){
+    text-decoration: line-through;
+}
+.course .card .footer p:nth-child(2){
+    font-weight: bold;
+}
+.course .card .footer button{
+    padding: 9px 14px;
+    background: #223442;
+    border: none;
+    outline: none;
+    color: #71C7FC;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.error{
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 599;
+    font-size: 20px;
+}
+.selected{
+    width: 180px;
+    height: 50px;
+    outline: none;
+    border: 2px solid #223442;
+    background: #71C7FC;
+    color: #223442;
+    border-radius: 4px;
+    cursor: pointer;
+}
